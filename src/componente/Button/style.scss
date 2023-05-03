@@ -1,0 +1,24 @@
+.btn {
+    background: blue;
+    color: black;
+    border: 0;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-family: inherit;
+    padding: .5rem 2rem;
+    font-size: 1rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    display: flex;
+
+    &:disabled{
+        background-color: gray;
+        cursor: no-drop;
+    }
+
+    &.btn1 {}
+
+    .boton2 {}
+
+
+}

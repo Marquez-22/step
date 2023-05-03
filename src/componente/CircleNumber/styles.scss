@@ -1,0 +1,44 @@
+.Circle{
+    border-radius: 100%;
+    border: 3px solid gray;
+    height:2rem ;
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 1s;
+
+    position: relative;
+
+    .line{
+        position: absolute;
+        left: calc(100% + 3px);
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        width: 1rem;
+        height:.5rem;
+        background-color: gray;
+        display: block;
+    }
+    &:last-child{
+        .line{
+            display: none;
+        }
+    }
+    &.active{
+        border-color: blue;
+        .line{
+            background: blue;
+        }
+        &:last-child{
+            background: red;
+            .line{
+                background: gray;
+            }
+        }
+    }
+
+
+}
